@@ -10,20 +10,29 @@ const Executives = () => {
 
       <div className='mb-[30px]'>
         <h3 className='text-center'>EXECUTIVES</h3>
-        <h2 className={`${styles.heading2} text-primary text-center`}>Our National Executives</h2>
+        <h2 className={`${styles.heading2} text-[#38A926]  text-center`}>Our National Executives</h2>
       </div>
 
       <div className='flex justify-between items-center flex-wrap gap-1 mb-[30px]'>
-        <div className='grid gap-2 md:gap-4 lg:gap-8 grid-cols-2 md:grid-cols-5 mx-auto'>
+        <div className='grid gap-6 md:gap-4 lg:gap-8 grid-cols-2 md:grid-cols-5 mx-auto'>
           {executives.map((executive, idx) => {
             return (
-              <div key={executive.id} className='flex flex-col items-center gap-[31px]'>
+              <div key={executive.id} className='flex flex-col items-center gap-8 '>
+
                 <div className=''>
                   <img src='/profile_placeholde_img.png' alt={executive.post} />
                 </div>
+
                 <p className='bg-primary text-secondary px-2 rounded'>{executive.name}</p>
-                <div className='flex gap-8'> <img src='/arrow-right.svg' alt='' /> {executive.post} <img src='/arrow-left.svg' alt='' /></div>
-                {/* <div className='flex gap-1 text-center'> <img src='/arrow-right.svg' alt='' /> {executive.post} <img src='/arrow-left.svg' alt='' /></div> */}
+
+                <div className='flex justify-center items-center gap-8'>
+                  <img className='w-5 h-5' src='images/bi-arrow-return-right.png' alt='' />
+
+                  {executive.post}
+
+                  <img className='w-5 h-5' src='images/bi-arrow-return-left.png' alt='' />
+
+                </div>
               </div>
             )
           })}

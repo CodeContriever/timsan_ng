@@ -6,14 +6,14 @@ import { Box } from '@chakra-ui/react'
 const News = () => {
   return (
     <Box
-      className={`py-2 md:py-6 mb-[50px] `}
+      className={`py-2 md:py-6 `}
     >
 
       <div
         className='mb-[55px]'
       >
         <h3 className='text-center'>TIMSAN BROADCAST</h3>
-        <h2 className={`${styles.heading2}  text-primary text-center`}>Latest News</h2>
+        <h2 className={`${styles.heading2}  text-[#38A926]  text-center`}>Latest News</h2>
       </div>
 
       <div>

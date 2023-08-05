@@ -14,7 +14,7 @@ import Nav from "../components/Nav";
 
 
 
-const LandingPage = () => {
+const Testing = () => {
 
   return (
     <div
@@ -51,7 +51,7 @@ const LandingPage = () => {
 
               {/* Paragraph */}
               <div className="">
-                <p className="text-justify md:text-center font-medium font-montserrat text-lg lg:text-xl text-gray-500 ">Our vision is to establish an Islamic Sufi inclined community governed by the teachings of the Quran and Sunnah tailored towards the spiritual, moral, economic and social uprightness of Tijaniyyah adherents and its lovers which will be a model worthy of emulation. And our mission is to develop a united and enlightened society of Tijanniyah adherents on campus fostered by true understanding of principles of Islam and Tijanniyah doctrines for the spiritual upliftment of its members through its peaceful congregational obligatory worships and nurturing the love and characters of Prophet (SAW) in them.</p>
+                <p className="font-medium font-montserrat text-lg lg:text-xl text-gray-500 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
 
               {/* CTA - Buttons: About Us & Donate Now  */}
@@ -171,5 +171,5 @@ const LandingPage = () => {
   )
 }
 
-export default LandingPage
+export default Testing
 

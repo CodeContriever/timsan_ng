@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import News from "../components/News";
-import Session from "../components/Session";
+import Session from "../components/TiletSession";
 import Stats from "../components/Stats";
 import Executives from "../components/Executives";
 import Location from "../components/Location";
@@ -31,6 +31,7 @@ const LandingPage = () => {
         </div>
 
       </header>
+
 
       <main className="bg-[#F9FAFB]">
 
@@ -151,11 +152,8 @@ const LandingPage = () => {
         {/* CTA section */}
         <section className="bg-white dark:bg-gray-900 mb-8">
 
-          <div className="px-2">
+          <CTA />
 
-            <CTA />
-
-          </div>
         </section>
 
 

@@ -17,6 +17,7 @@ export const navLinks = [
   },
 ];
 
+
 export const stats = [
   {
     id: "0",
@@ -39,6 +40,7 @@ export const stats = [
     title: "Members"
   },
 ];
+
 
 export const news = [
   {
@@ -64,6 +66,7 @@ export const news = [
   },
 ];
 
+
 export const sessions = [
   {
     id: "0",
@@ -86,6 +89,7 @@ export const sessions = [
     image: "",
   },
 ];
+
 
 export const executives = [
   {
@@ -119,6 +123,7 @@ export const executives = [
     image: ""
   },
 ]
+
 
 export const courses = [
   {
@@ -155,6 +160,7 @@ export const courses = [
   },
 ]
 
+
 export const feedbacks = [
   {
     id: "0",
@@ -174,6 +180,7 @@ export const feedbacks = [
   },
 ];
 
+
 export const tiletsessions = [
   {
     id: "0",
@@ -189,6 +196,7 @@ export const tiletcourses = [
     title: "Available Courses"
   },
 ];
+
 
 export const books = [
   {

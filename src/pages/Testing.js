@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import News from "../components/News";
-import Session from "../components/Session";
+import TiletSession from "../components/TiletSession";
 import Stats from "../components/Stats";
 import Executives from "../components/Executives";
 import Location from "../components/Location";
@@ -110,7 +110,7 @@ const Testing = () => {
           {/* Wrapper */}
           <div className="container mx-auto px-6">
 
-            <Session />
+            <TiletSession />
 
           </div>
         </section>
@@ -151,11 +151,10 @@ const Testing = () => {
         {/* CTA section */}
         <section className="bg-white dark:bg-gray-900 mb-8">
 
-          <div className="px-2">
 
-            <CTA />
+          <CTA />
 
-          </div>
+
         </section>
 
 

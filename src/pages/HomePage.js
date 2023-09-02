@@ -171,11 +171,8 @@ const HomePage = () => {
         {/* CTA section */}
         <section className="bg-white dark:bg-gray-900 mb-8">
 
-          <div className="px-2">
+          <CTA />
 
-            <CTA />
-
-          </div>
         </section>
 
 

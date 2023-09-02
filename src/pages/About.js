@@ -228,11 +228,8 @@ const About = () => {
         {/* CTA section */}
         <section className="bg-white dark:bg-gray-900 mb-8">
 
-          <div className="">
+          <CTA />
 
-            <CTA />
-
-          </div>
         </section>
 
 

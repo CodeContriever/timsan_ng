@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Nav2 from "../components/Nav2";
 
-const SignUpMember = () => {
+const SignIn = () => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -50,7 +50,7 @@ const SignUpMember = () => {
     <div>
       {/* ... Header section ... */}
       <header className="sticky top-0 bg-white border-b-2 border-gray-200 shadow-md z-[10001]">
-        <div className="container mx-auto px-8 py-8">
+        <div className="container mx-auto px-8">
           <Nav2 />
         </div>
       </header>
@@ -66,7 +66,7 @@ const SignUpMember = () => {
 
           {/* Form header*/}
           <div className="flex flex-col gap-1 text-center px-8 mb-4">
-            <h2 className="text-white text-xl font-semibold font-lato">Register</h2>
+            <h2 className="text-white text-xl font-semibold font-lato">Log In</h2>
             <p className="text-white text-md">Let’s get you started! Register with a social account to begin.</p>
           </div>
 
@@ -116,12 +116,12 @@ const SignUpMember = () => {
 
           {/* Register button */}
           <button type="submit" className="bg-white px-8 py-1.5 rounded-xl mb-6 ">
-            Signup
+            Signin
           </button>
 
           <div className="flex gap-2">
-            <p className="text-white">Do you have an account?</p>
-            <Link to={"/signin"}>Sign In</Link>
+            <p className="text-white">Don't have an account yet?</p>
+            <Link to={"/signup"}>Sign Up</Link>
           </div>
         </div>
       </main>
@@ -129,4 +129,4 @@ const SignUpMember = () => {
   );
 };
 
-export default SignUpMember;
+export default SignIn;

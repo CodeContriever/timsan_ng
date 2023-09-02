@@ -5,14 +5,12 @@ import { ChevronUpIcon, ChevronDownIcon } from '@chakra-ui/icons';
 // DropdownMenu component
 const DropdownMenu = ({ title, links, active, onClick }) => (
   <div className="relative flex flex-col gap-4">
-
     <div
       className={`flex gap-2 text-base hover:text-[#A020F0] cursor-pointer ${active === title ? 'text-[#A020F0]' : ''}`}
       onClick={() => onClick(title)}
     >
-      {title} {active === title ? '▲' : '▼'}
+      {title} {active === title ? '▲' : '▼'} {/* Conditional arrow icons */}
     </div>
-
     {active === title && (
       <ul className="absolute top-10 left-4 flex flex-col gap-4 w-32 z-10 text-base list-none shadow-lg bg-white px-3">
         {links.map((link, index) => (
@@ -71,7 +69,7 @@ const MobileNavigationLinks = ({ activeButton, handleButtonClick, isMobileMenuOp
 
     <div
       // className='w-64 absolute top-5 right-40 left-1  p-4'
-      className='w-64 absolute top-12 right-2 left-1 lg:right-12 my-4 text-base list-none bg-gray-400 divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600 rounded-xl'
+      className='w-64 absolute top-12 right-2 left-1 lg:right-12 z-10 my-4 text-base list-none bg-gray-400 divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600 rounded-xl'
     >
 
       <ul className="flex flex-col gap-4 font-medium  bg-gray-400 divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600 rounded-xl p-4">
@@ -201,7 +199,7 @@ const UserProfileMenu = ({ isActive }) => (
 
 
 // Nav component
-const Nav3 = () => {
+const Nav4 = () => {
   const [activeButton, setActiveButton] = useState('');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -277,4 +275,4 @@ const Nav3 = () => {
   );
 };
 
-export default Nav3;
+export default Nav4;

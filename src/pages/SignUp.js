@@ -8,14 +8,13 @@ import Nav2 from "../components/Nav2";
 
 
 
-const LogIn_Member = () => {
+const SignUp = () => {
   const navigate = useNavigate();
-  // const [selectedOption, setSelectedOption] = useState('');
 
   const handleSelectChange = (event) => {
     const selectedOption = event.target.value;
     if (selectedOption) {
-      navigate(selectedOption); // Navigate to the selected option
+      navigate(selectedOption);
     }
   };
 
@@ -104,10 +103,10 @@ const LogIn_Member = () => {
                 >
 
                   <option value="">Select an option</option>
-                  <option value="/register_as_member">Student</option>
-                  <option value="/register_as_institution">Institution</option>
-                  <option value="/register_as_zone">Zone</option>
-                  <option value="/register_as_state">State</option>
+                  <option value="/signup_as_member">Student</option>
+                  <option value="/signup_as_institution">Institution</option>
+                  <option value="/signup_as_zone">Zone</option>
+                  <option value="/signup_as_state">State</option>
                 </select>
 
 
@@ -134,4 +133,4 @@ const LogIn_Member = () => {
   )
 }
 
-export default LogIn_Member
+export default SignUp

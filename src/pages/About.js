@@ -18,7 +18,7 @@ const About = () => {
         className='box-border w-[100%]  py-8 flex bg-white  sticky top-0 left-0 right-0 z-[10001] border-b-2 border-gray-200 my-0 shadow-[inset 0 -1px #e9eaea]'
       >
         {/* Wrapper */}
-        <div className="container mx-auto px-8">
+        <div className="container mx-auto px-8 py-8">
 
           <Nav3 />
 

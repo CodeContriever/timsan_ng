@@ -32,6 +32,7 @@ import Membership from "./pages/Membership";
 import Profile from "./pages/Profile";
 
 import Settings from "./pages/Settings";
+import FAQ from './pages/FAQ';
 
 
 
@@ -80,6 +81,8 @@ const App = () => {
 
 
         <Route path="/settings" element={<Settings />} />
+
+        <Route path="/faq" element={<FAQ />} />
 
 
 

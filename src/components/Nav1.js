@@ -88,7 +88,7 @@ const Nav1 = () => {
           About Us
         </Link>
         <Link
-          to="/register"
+          to="/signup"
           className="px-3 py-1 text-center text-[#F2F2F2] rounded-lg bg-[#38A926] cursor-pointer"
         >
           Register

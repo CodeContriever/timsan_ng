@@ -155,7 +155,7 @@ const ProfileMenuButton = ({ onClick, isActive }) => (
 // UserProfileMenu component
 const UserProfileMenu = ({ isActive }) => (
   isActive && (
-    <div className="w-64 absolute top-12 right-20 lg:right-12 z-10 my-4 text-base list-none bg-gray-400 divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600 rounded-xl">
+    <div className="w-64 absolute top-12 right-12 lg:right-12 z-10 my-4 text-base list-none bg-gray-400 divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600 rounded-xl">
       {/* User name and email */}
       <div className="py-3 px-4">
 
@@ -247,7 +247,10 @@ const Nav3 = () => {
       <div className='flex flex-row gap-4'>
 
         {/* About Us & Register buttons */}
-        <div className="flex flex-row gap-4">
+        <div
+          // className="flex flex-row gap-4"
+          className="hidden"
+        >
           <Link
             to="/about"
             className="hidden md:flex px-4 py-1 text-center text-[#444] font-semibold cursor-pointer hover:text-[#38A926] border border-gray-300 rounded-lg"

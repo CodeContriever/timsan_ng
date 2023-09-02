@@ -47,11 +47,11 @@ const QuickLinks = () => (
   <div className="mr-8 sm:mr-0">
     <h2 className="mb-6 text-[20px] font-semibold">Quick Links</h2>
     <ul className="flex flex-col gap-2 text-[14px]">
-      <li><a href="/">About Us</a></li>
-      <li><a href="/">FAQs</a></li>
-      <li><a href="/">Membership</a></li>
-      <li><a href="/">TILETS</a></li>
-      <li><a href="/">Register</a></li>
+      <li><a href="/about">About Us</a></li>
+      <li><a href="/faq">FAQs</a></li>
+      <li><a href="/membership">Membership</a></li>
+      <li><a href="/tilets">TILETS</a></li>
+      <li><a href="/signup">Register</a></li>
     </ul>
   </div>
 );

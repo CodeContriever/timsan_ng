@@ -32,7 +32,10 @@ import Membership from "./pages/Membership";
 import Profile from "./pages/Profile";
 
 import Settings from "./pages/Settings";
+
 import FAQ from './pages/FAQ';
+
+import Dues from './pages/Dues';
 
 
 
@@ -78,6 +81,8 @@ const App = () => {
         <Route path="/membership" element={<Membership />} />
 
         <Route path="/profile" element={<Profile />} />
+
+        <Route path="/annual_dues" element={<Dues />} />
 
 
         <Route path="/settings" element={<Settings />} />

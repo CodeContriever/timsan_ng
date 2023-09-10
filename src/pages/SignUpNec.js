@@ -113,7 +113,7 @@ const SignUpNec = () => {
 
 
         <div className="">
-          <Toaster position='top-center' reverseOrder={false}></Toaster>
+          <Toaster position='bottom-center' reverseOrder={false}></Toaster>
         </div>
 
         <div className="bg-[#38A926] md:rounded-2xl flex flex-col items-center pb-20">

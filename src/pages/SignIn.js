@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import Nav2 from "../components/Nav2";
 import Input from "../components/profile/Input"
+import PasswordInput from "../components/PasswordInput";
 import Button from "../components/Button";
 import toast, { Toaster } from 'react-hot-toast';
 import { useAuth } from '../utils/auth';
@@ -153,17 +154,16 @@ const SignIn = () => {
 
               {/* Password field */}
               <div>
-                <Input
-                  type="password"
+                <PasswordInput
                   name="password"
-                  id="password"
+                  label="Password"
                   value={formData.password}
                   onChange={handleInputChange}
-                  label="Password"
                   required
-                  labelClasses="text-blue-500"
-                  inputClasses="border border-gray-700 border-opacity-50"
+                  labelClasses="text-gray-800 text-md font-medium"
+                  inputClasses="border border-gray-700 border-opacity-50 rounded-l-lg"
                 />
+
               </div>
 
 

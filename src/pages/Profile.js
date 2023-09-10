@@ -93,8 +93,6 @@ const Hero = () => {
 
           <div className="flex flex-col justify-center items-center gap-8">
 
-
-
             {/* Profile avatar */}
             <div className='profile flex justify-center py-8'>
               <label htmlFor="profile">
@@ -380,18 +378,7 @@ const Form = () => {
                   </div>
 
 
-                  {/* Buttons */}
-                  {/* <div className="flex flex-col gap-4 items-center justify-center">
-                <Button onClick={''} className="bg-[#38A926] hover:bg-white text-[#F2F2F2] hover:text-[#444]  hover:border hover:border-gray-300">
-                  Save
-                </Button>
 
-                <Button onClick={() => handleButtonClick('form2')}
-                  className="text-[#444] hover:text-white border border-gray-300 hover:bg-[#38A926] ">
-                  Next
-                </Button>
-
-              </div> */}
 
                 </div>
 

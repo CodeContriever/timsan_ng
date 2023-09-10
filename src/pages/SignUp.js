@@ -103,10 +103,11 @@ const SignUp = () => {
                 >
 
                   <option value="">Select an option</option>
-                  <option value="/signup_as_member">Student</option>
+                  <option value="/signup_as_member">Member</option>
                   <option value="/signup_as_institution">Institution</option>
-                  <option value="/signup_as_zone">Zone</option>
                   <option value="/signup_as_state">State</option>
+                  <option value="/signup_as_zone">Zone</option>
+                  <option value="/signup_as_nec">nec</option>
                 </select>
 
 

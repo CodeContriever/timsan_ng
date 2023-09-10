@@ -260,3 +260,192 @@ export const books = [
     author: "Shaikh Ibrahim Niyass",
   },
 ]
+
+
+
+export const accountTypes = ["member", "state", "zone", "nec"];
+
+
+
+export const institutions = [
+  {
+    id: 0,
+    type: "University",
+    name: "Abia State University",
+    location: "Umuahia, Abia State",
+  },
+  {
+    id: 1,
+    type: "University",
+    name: "Ahmadu Bello University",
+    location: "Zaria, Kaduna State",
+  },
+  {
+    id: 2,
+    type: "University",
+    name: "Adekunle Ajasin University",
+    location: "Akungba, Ondo State",
+  },
+  {
+    id: 3,
+    type: "University",
+    name: "Abubakar Tafawa Balewa University",
+    location: "Bauchi, Bauchi State",
+  },
+  {
+    id: 4,
+    type: "University",
+    name: "Bayero University Kano",
+    location: "Kano, Kano State",
+  },
+  {
+    id: 5,
+    type: "University",
+    name: "Federal University of Technology, Akure",
+    location: "Akure, Ondo State",
+  },
+  {
+    id: 6,
+    type: "University",
+    name: "University of Lagos",
+    location: "Lagos, Lagos State",
+  },
+  {
+    id: 7,
+    type: "University",
+    name: "University of Ibadan",
+    location: "Ibadan, Oyo State",
+  },
+  {
+    id: 8,
+    type: "University",
+    name: "University of Benin",
+    location: "Benin City, Edo State",
+  },
+  {
+    id: 9,
+    type: "University",
+    name: "Federal University of Technology, Minna",
+    location: "Minna, Niger State",
+  },
+  {
+    id: 10,
+    type: "University",
+    name: "University of Port Harcourt",
+    location: "Port Harcourt, Rivers State",
+  },
+  {
+    id: 11,
+    type: "University",
+    name: "Obafemi Awolowo University",
+    location: "Ile-Ife, Osun State",
+  },
+  {
+    id: 12,
+    type: "University",
+    name: "Federal University of Technology, Owerri",
+    location: "Owerri, Imo State",
+  },
+  {
+    id: 13,
+    type: "University",
+    name: "Federal University of Agriculture, Abeokuta",
+    location: "Abeokuta, Ogun State",
+  },
+  {
+    id: 14,
+    type: "University",
+    name: "University of Nigeria, Nsukka",
+    location: "Nsukka, Enugu State",
+  },
+  {
+    id: 15,
+    type: "Polytechnic",
+    name: "Yaba College of Technology",
+    location: "Yaba, Lagos State",
+  },
+  {
+    id: 16,
+    type: "Polytechnic",
+    name: "Federal Polytechnic, Ado-Ekiti",
+    location: "Ado-Ekiti, Ekiti State",
+  },
+  {
+    id: 17,
+    type: "Polytechnic",
+    name: "Kaduna Polytechnic",
+    location: "Kaduna, Kaduna State",
+  },
+  {
+    id: 18,
+    type: "College of Education",
+    name: "Federal College of Education, Zaria",
+    location: "Zaria, Kaduna State",
+  },
+  {
+    id: 19,
+    type: "College of Education",
+    name: "Adeniran Ogunsanya College of Education",
+    location: "Lagos, Lagos State",
+  },
+  {
+    id: 20,
+    type: "College of Education",
+    name: "Federal College of Education, Abeokuta",
+    location: "Abeokuta, Ogun State",
+  },
+  // Add more institutions here
+];
+
+
+
+export const states = [
+  "Abia",
+  "Adamawa",
+  "Akwa Ibom",
+  "Anambra",
+  "Bauchi",
+  "Bayelsa",
+  "Benue",
+  "Borno",
+  "Cross River",
+  "Delta",
+  "Ebonyi",
+  "Edo",
+  "Ekiti",
+  "Enugu",
+  "FCT - Abuja",
+  "Gombe",
+  "Imo",
+  "Jigawa",
+  "Kaduna",
+  "Kano",
+  "Katsina",
+  "Kebbi",
+  "Kogi",
+  "Kwara",
+  "Lagos",
+  "Nasarawa",
+  "Niger",
+  "Ogun",
+  "Ondo",
+  "Osun",
+  "Oyo",
+  "Plateau",
+  "Rivers",
+  "Sokoto",
+  "Taraba",
+  "Yobe",
+  "Zamfara",
+];
+
+export const zones = [
+  "North-West Zone",
+  "North-East Zone",
+  "North-Central Zone",
+  "South-West Zone",
+  "South-East Zone",
+  "South-South Zone",
+];
+
+

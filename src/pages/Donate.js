@@ -11,11 +11,13 @@ import axios from "axios";
 const Donate = () => {
 
   return (
+
     <div>
 
       <Header />
 
       <main>
+
         <Hero />
 
         <Form />

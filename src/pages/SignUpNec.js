@@ -4,12 +4,11 @@ import Nav2 from "../components/Nav2";
 import Input from "../components/profile/Input"
 import Button from "../components/Button";
 import { accountTypes } from '../constants/index';
-import { states } from '../constants/index';
 import toast, { Toaster } from 'react-hot-toast';
 
 
 
-const SignUpState = () => {
+const SignUpNec = () => {
 
   const [formData, setFormData] = useState({
     firstName: "",
@@ -21,16 +20,8 @@ const SignUpState = () => {
 
   });
 
-  const handleStateSelectChange = (e) => {
-    const selectedState = e.target.value;
-    setFormData((prevData) => ({
-      ...prevData,
-      firstName: `State: ${selectedState}`,
-    }));
-  };
 
-
-  const handleAccountTypeSelectChange = (e) => {
+  const handleSelectChange = (e) => {
     const selectedAccountType = e.target.value;
     setFormData((prevData) => ({
       ...prevData,
@@ -120,6 +111,7 @@ const SignUpState = () => {
 
       <main className="bg-[#38A926] md:bg-white min-h-screen flex items-center justify-center md:pt-12 md:pb-20">
 
+
         <div className="">
           <Toaster position='top-center' reverseOrder={false}></Toaster>
         </div>
@@ -158,45 +150,36 @@ const SignUpState = () => {
 
             <div className="flex flex-col gap-4">
 
-              {/* Last Name: TIMSAN */}
+              {/* First Name */}
+              <div>
+                <Input
+                  type="text"
+                  name="firstName"
+                  id="firstName"
+                  value={formData.firstName}
+                  onChange={handleInputChange}
+                  label="First Name"
+                  required
+                  labelClasses="text-gray-800"
+                  inputClasses="border border-gray-700 border-opacity-50 bg-white"
+                />
+
+              </div>
+
+              {/* Last Name */}
               <div>
 
                 <Input
                   type="text"
                   name="lastName"
                   id="lastName"
-                  value="TIMSAN"
+                  value={formData.lastName}
                   onChange={handleInputChange}
                   label="Last Name"
                   required
                   labelClasses="text-blue-500"
                   inputClasses="border border-gray-700 border-opacity-50 bg-white"
-                  disabled={true}
                 />
-
-              </div>
-
-              {/* First Name: State*/}
-              <div className="flex flex-col gap-0.5">
-
-                <label
-                  for="state"
-                  className="text-md font-medium text-gray-800 dark:text-white">First Name: State</label>
-
-                <select
-                  id="state"
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  onChange={handleStateSelectChange}
-                >
-
-                  <option value="">Select a State</option>
-                  {states.map((state, index) => (
-                    <option key={index} value={state}>
-                      {state}
-                    </option>
-                  ))}
-                </select>
-
 
               </div>
 
@@ -257,7 +240,7 @@ const SignUpState = () => {
                 <select
                   id="account_type"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  onChange={handleAccountTypeSelectChange}
+                  onChange={handleSelectChange}
                 >
 
                   <option value="">Select an account type</option>
@@ -275,7 +258,7 @@ const SignUpState = () => {
             </div>
 
             {/* Submit Button */}
-            <div className="flex flex-row gap-4 items-center justify-center py-4 mt-8">
+            <div className="flex flex-row gap-4 items-center justify-center py-4">
 
               <Button
                 onClick={handleSubmit}
@@ -324,4 +307,4 @@ const SignUpState = () => {
   );
 };
 
-export default SignUpState;
+export default SignUpNec;
